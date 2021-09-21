@@ -1,0 +1,23 @@
+// Arrow Function
+const calcAge = birthYear => 2021 - birthYear;
+const age1 = calcAge(1999);
+console.log(age1);
+
+// 2nd part
+const yearsUntilRetirement = birthYear => {
+	const age2 = 2021 - birthYear;
+	const retirement = 65 - age2;
+	return retirement;
+}
+
+console.log(yearsUntilRetirement(1999));
+
+// 3rd Part
+const yearUntilRetirement = (birthYear, firstName) => {
+	const age3 = 2021 - birthYear;
+	const retirement = 64 - age3;
+	return `${firstName} retires in ${retirement} years.`;
+}
+
+console.log(yearUntilRetirement(1999, "Afsar"));
+console.log(yearUntilRetirement(1978, "Anwar"));
